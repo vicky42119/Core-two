@@ -1,0 +1,133 @@
+/* load your fonts here with @font-face */
+
+/* add styling here */
+@font-face {
+    font-family: 'IBM PlexSans';
+    src: url('fonts/IBMPlexSans-Regular.woff') format(.woff), url(fonts/IBMPlexSans-Regular.woff2) format(.woff2);
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'IBM PlexSans Bold';
+    src: url('fonts/IBMPlexSans-Bold.woff') format(.woff), url('fonts/IBMPlexSans-Bold.woff2') format(.woff2);
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+
+}
+
+html { 
+    background-color: #f7f1ea;
+}
+
+.container {
+    font-family: 'IBMPlexSans Bold', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased; 
+    margin-left: 22em;
+    margin-right: 22em;
+    padding-top: 10em;
+      }
+
+
+.content {
+    font-family: 'IBMPlexSans', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    color:rgb(82, 65, 65) ; 
+}
+
+
+
+h1, {   
+font-family: 'IBMPlexSans', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    line-height: 0.2;
+    -webkit-font-smoothing: antialiased; 
+    color:  rgb(82, 65, 65);
+   
+}
+
+h2 { 
+    font-family: 'IBMPlexSans Bold', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 0.2;
+    -webkit-font-smoothing: antialiased; 
+    color:  rgb(82, 65, 65);
+
+}
+
+h3 {   
+    font-family: 'IBMPlexSans', Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        line-height: 0.1;
+        -webkit-font-smoothing: antialiased; 
+        color:  rgb(82, 65, 65);
+        padding-top: 1.5em;
+    
+    }
+
+ .header  {
+     line-height: 0pt;  
+    }
+
+
+.author { 
+    font-family: 'IBMPlexSans', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased; 
+    color:  rgb(82, 65, 65);
+    padding-bottom: 1.5em;
+
+}
+
+       
+
+.firstcharacter {
+    color: rgb(34, 34, 34);
+  float: left;
+  font-family: 'IBMPlexSans Bold', Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 35px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-style: solid;
+  border-width: 1.5pt;
+  border-color: rgb(224, 136, 2);
+  float: left;
+    background-color: rgba(231, 213, 195, 0.911);
+    
+ 
+}
+    
+
+.frenchie-pic {
+        float: right;    
+         margin: 0 0 0 15px;
+         box-shadow: 10px 10px rgb(48, 101, 119);
+        
+}
+
+hr {
+    
+        border-top: 2px solid rgb(238, 107, 0);
+        padding-bottom: 0pt;
+      }
+
+
+
+blockquote  {
+border-left: solid;
+    border-left-color: rgb(255, 123, 0);
+    border-left-width: 2pt;
+    border-left-style: solid;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: rgba(231, 213, 195, 0.911);
+    text-align: center;
+}
