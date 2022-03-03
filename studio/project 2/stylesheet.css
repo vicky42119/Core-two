@@ -31,7 +31,7 @@ body {
     height: 50%;
     width: 80%;
     margin: 0 0 0% 10%;
-    transform: perspective(450px) rotateX(30deg);
+    transform: perspective(450px) rotateX(35deg);
     overflow-y: scroll;
     background-color: rgb(39, 39, 39);
     overflow-x: hidden;
@@ -77,12 +77,13 @@ p {
     font-weight: 200;
     font-size: 3vw;
     line-height: 1.4em;
-    margin: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: rgb(233, 10, 10);
 }
 
 .semi-circle{
-    top: 20%;
+    top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 50vw;
