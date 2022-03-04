@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
+
 
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
 }
@@ -7,28 +8,57 @@ html { overflow-x: hidden;
 
 }  
 
+.circle {
+ width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 23%;
+  margin-right: 23%;
+  margin-top: 20vw;
+  border-color: white;
+  border-width: 1vw;
+  border-style: solid;
 
+}
 
 body {
-    background: rgb(255, 0, 0);
+    background: rgb(180, 0, 0);
     overflow-y: scroll;
     margin: auto;
     overflow-x: hidden;
 
   }
 
+  .title {
+      color: white;
+      margin-left: 30%;
+      margin-right: 30%;
+      text-align: center;
+      position: relative;
+    bottom: 20%;
+      
+
+}
+
   .wrapper {
-    height: 68%;
-    width: 80%;
-    margin: 0 0 0% 10%;
-    transform: perspective(450px) rotateX(35deg);
+    height: 100%;
+    width: 90%;
+    margin: 0 0 0% 1%;
+    transform: perspective(450px) rotateX(30deg);
     overflow-y: scroll;
-    background-color: rgb(39, 39, 39);
     overflow-x: hidden;
+    border-left: 4vw;
+    border-right: 4vw;
+    border-color: rgb(36, 36, 36);
+    border-style: solid;
+    box-shadow: 0px 10px 10px rgb(19, 19, 19);
+    position: relative;
+    bottom: 30% ;
+    
 
   }
   .scroll-text {
-    color: #ffffff;
+    color: #1f1f1f;
     font-weight: bold;
     text-align: justify;
     position: relative;
@@ -37,48 +67,48 @@ body {
   }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 10vw;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 12vw;
     margin-top: 10%;
     line-height: 5vh
 }
   
 h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
     text-align: center;
     font-weight: 800;
-    font-size: 7vw;
+    font-size: 6vw;
     margin-left: 5%;
     margin-right: 5%;
+    color: white;
 
   }
   
 
 p { 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    font-size: 3vw;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 4vw;
     line-height: 1.4em;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: rgb(233, 10, 10);
+    margin-left: 10%;
+    margin-right: 10%;
     background-size: 4vw;
 
 }
 
 .semi-circle{
-    top: 26%;
+    top: 3%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 50vw;
-    width: 62vw;
+    width: 70vw;
     border-radius: 35vw 35vw 0 0;
-    border-style:dashed;
-    border-color: rgb(122, 122, 122);
+    border-color: rgb(61, 61, 61);
     background-color: rgb(22, 22, 22);
-    border-width: 2vw;
+    border-width: 3vw;
     border-bottom: 0pt;
+    border-style: solid;
     float: center;
     z-index: 1;
     position: relative;

@@ -1,10 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;800&display=swap');
 
 html {
-    background: rgb(255, 0, 0);
+    background: rgb(180, 0, 0);
     overflow: hidden;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.circle {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     border-color: white;
+     border-width: 2vw;
+     border-style: solid;
+     margin-top: 5%;
+     margin-left: 13%;
+     position: relative;
+   
+   }
+
+.circle-text {
+    position: relative;
+    bottom: 21vh;
+    justify: center;
+    margin-left: 15%;
+    margin-right: 17%;
+    color: white;
+
+}
+
+a {
+    font-size: 12vh;
+    color: white;
+
+
+}
+
+.second-title {
+    position: relative;
+    bottom: 21vh;
+
+}
+
+.author {
+    position: relative;
+    bottom: 21vh;
+
+}
+
+.first-extract {
+    position: relative;
+    bottom: 21vh;
+
 }
 
 h1 {
