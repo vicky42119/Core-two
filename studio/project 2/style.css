@@ -1,80 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
 
 html {
     background: rgb(180, 0, 0);
-    overflow: hidden;
-    margin-left: 10%;
-    margin-right: 10%;
+    overflow-y: hidden;
 }
 
-.circle {
-     width: 200px;
-     height: 200px;
-     border-radius: 50%;
-     border-color: white;
-     border-width: 2vw;
-     border-style: solid;
-     margin-top: 5%;
-     margin-left: 13%;
-     position: relative;
-   
-   }
+.whole-page {
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.title {
+    margin-top: 15vw;
+
+}
 
 .circle-text {
     position: relative;
-    bottom: 21vh;
-    justify: center;
-    margin-left: 15%;
-    margin-right: 17%;
+    text-align: center;
     color: white;
+    position: relative;
+    bottom: 15vw;
 
 }
 
 a {
-    font-size: 12vh;
+    font-size: 25vh;
     color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
 
 
 }
 
 .second-title {
     position: relative;
-    bottom: 21vh;
+    bottom: 30vw;
+    
 
 }
 
 .author {
     position: relative;
-    bottom: 21vh;
+    bottom: 26vw;
+    color: white;
+
+    
 
 }
 
 .first-extract {
     position: relative;
-    bottom: 21vh;
+    
 
 }
 
 h1 {
-    margin-top: 20vw;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 800;
     font-size: 10vw;
 
 }
 
 h2 {
-    margin-top: 2vw;
+    
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    font-size: 7vw;
+    font-size: 8vw;
 
 }
 
 h3 {
-    margin-top: 12vw;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
