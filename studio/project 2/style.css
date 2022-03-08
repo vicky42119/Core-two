@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
 
 html {
-    background: linear-gradient(0deg, #c91919 53%, #af0000 53%);
+    background: linear-gradient(0deg, #c91919 50%, #af0000 50%);
     overflow-y: hidden;
     overflow-x: hidden;
     border-style:solid;
     border-width: 20px;
-    color: #af0000  ;
+    color: #af0000 ;
 }
 
 .title-text {
