@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
 
 html {
-    background: #c91919;
+    background: linear-gradient(0deg, #c91919 53%, #af0000 53%);
     overflow-y: hidden;
     overflow-x: hidden;
     border-style:solid;
     border-width: 20px;
-    color: #363636 ;
+    color: #af0000  ;
 }
 
 .title-text {
@@ -23,7 +23,7 @@ svg {
     width: 66%;
     position: relative;
     margin-left: 15%;
-    margin-top: 70%;
+    margin-top: 20%;
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     color: white;
@@ -42,8 +42,6 @@ svg {
       
 }
 
-
-
  .author {
     position: relative;
     text-align: center;
@@ -53,7 +51,18 @@ svg {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #313131 
+    
+}
+
+.intro-block {
+    position: relative;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 14%;
+    bottom: 13%;
+ 
+
 }
 
 h1 {
@@ -66,17 +75,32 @@ h1 {
 h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 800;
-    font-size: 6vw;
+    font-size: 8vw;
+    
 
 }
 
 h3 {
 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 7vw;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 4vw;
+    color: white;
+    
 
 }
+
+h4 {
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 6vw;
+    text-align: center;
+    color: white;
+    
+
+}
+
 
 p { 
     font-family: 'Raleway', sans-serif;
