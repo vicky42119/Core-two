@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
 
 html {
-    background: linear-gradient(0deg, #c91919 50%, #af0000 50%);
+    background: linear-gradient(0deg, #c91919 55%, #af0000 55%);
     overflow-y: hidden;
     overflow-x: hidden;
     border-style:solid;
@@ -51,7 +51,9 @@ svg {
 
 a {
     text-decoration: none;
-    color: #313131 
+    color: #860000; 
+    font-weight: 800;
+    font-size: 8vw;
     
 }
 
@@ -60,10 +62,20 @@ a {
     text-align: center;
     margin-left: 15%;
     margin-right: 14%;
-    bottom: 13%;
- 
-
 }
+
+.button {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color:#af0000;
+
+ 
+}
+
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -76,6 +88,7 @@ h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     font-size: 8vw;
+    color: rgb(58, 58, 58);
     
 
 }
