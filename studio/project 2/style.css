@@ -3,7 +3,6 @@
 
 html {
     background: linear-gradient(0deg, #c91919 55%, #af0000 55%);
-    overflow-y: hidden;
     overflow-x: hidden;
     border-style:solid;
     border-width: 20px;
