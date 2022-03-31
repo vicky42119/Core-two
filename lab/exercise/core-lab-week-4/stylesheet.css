@@ -13,7 +13,7 @@
 
   
 .Header-center { grid-area: 1 / 2 / 2 / 3; 
-
+    background-color: rgb(0, 0, 0);
 }
 
 .Title {
@@ -25,7 +25,7 @@
 }
   
 .Header-left { grid-area: 1 / 1 / 2 / 2; 
-
+    background-color: rgb(0, 0, 0);
 }
   
 .Header-right { grid-area: 1 / 3 / 2 / 4; 
@@ -150,12 +150,19 @@
 .main-right-content {
     object-fit: cover;
     width: 100%;
-    max-height: 100%;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 2em;
     margin-top: 1em;
 
 }
+
+.right-image {
+    margin-top: 0.1em;
+    object-fit: cover;
+    width: 80%;
+    max-height: 100%
+
+}
+
   
 .Body-left { grid-area: 4 / 1 / 5 / 2; 
 border-top: 0px;
