@@ -1,14 +1,14 @@
-console.log('hi')
-fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201'), {
+console.log('hi');
+fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201',{
     Headers: {
         Authorization: 'Bearer keyZA1e5QRYt1En9y',
 },
-}
+})
     .then (reponse => Response.json())
     .then (data => {
         console.log(data);
 
-    const container = document.querySelector('name');
+    const container = document.querySelector('.names');
 
     data.records.forEach(name => {
         console.log(name);
@@ -19,7 +19,5 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201'), {
                 <h5>${name.fields.date}</h5>
         </div>;
     }); 
+});
 
-    console.log(data);
-
-})
