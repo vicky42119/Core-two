@@ -29,6 +29,9 @@
     padding: 20px;
   }
   
+  .posters-container {
+}
+
   .poster {
     border: 1px solid #e7e7e7;
     box-shadow: 0 4px 8px 0 hsla(300, 4%, 80%, 0.3);
@@ -38,22 +41,18 @@
     margin-bottom: 20px;
   }
   
-  .poster h3 {
-  font-size: 1em; }
-  
+  .poster h3,
   .poster h4,
   .poster h5 {
     margin: 0;
   }
   
   .poster h4 {
-    font-size: 1em;  
     font-weight: 400;
     margin: 0 0 10px 0;
   }
   .poster h5 {
     color: #666;
-    font-size: 1em;  
   }
   
   .poster img {

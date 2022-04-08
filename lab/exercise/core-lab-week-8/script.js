@@ -34,14 +34,13 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
       // note the backticks `` below. This allows us to add html + js together using ${field} in a single block of code
       postersContainer.innerHTML += `
         <div class="poster">
-          <h5>${poster.fields.name}</h5> 
-          <h5>${poster.fields.dimensions}</h5>  
-          <h3>${poster.fields.artist}</h3>
-          <h4>${poster.fields.date}</h4>
-          <img src="${poster.fields.attachements[0].thumbnails.large}" width='200'/>
+          <h5>${poster.fields.Name}</h5> 
+          <h5>${poster.fields.Dimensions}</h5>  
+          <h3>${poster.fields.Artist}</h3>
+          <h4>${poster.fields.Date}</h4>
+          <img src="${poster.fields.Attachements[0].thumbnails.large.url}" width='200'/>
         </div>
         `;
-        [0]
       // that's it!
       // Try adding or removing items in your Airtable base and see your website update on refresh
     });
