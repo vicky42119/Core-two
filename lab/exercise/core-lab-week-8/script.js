@@ -36,7 +36,7 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
       
           <div class="poster">
           <div class="images">
-          <img src="${poster.fields.Attachements[0].thumbnails.large.url}" width='200'/>
+          <img src="${poster.fields.Attachements[0].thumbnails.large.url}" class="img2" width='200'/>
           </div>
           <div class="text">
           <h5>${poster.fields.Name}</h5> 
