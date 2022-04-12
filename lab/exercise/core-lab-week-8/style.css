@@ -13,18 +13,143 @@
     letter-spacing: -0.025rem;
   }
   
-  h1 {
-    margin: 0;
-    line-height: 1;
-    letter-spacing: -0.025rem;
-    color: white;
-    font-size: 7vh;
+  .filters {
     position: fixed;
-    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+  
+  .Artist {
+    position: fixed;
+    display: inline-block;
+    color: white;
+    font-size: 4vh;
     margin-left: 3vh;
+  }
+  
+  .Artist-content {
+    display: none;
+    position: relative;
+    color: white;
+    min-width: 160px;
+    padding: 4px;
+    z-index: 1;
+    font-size: 2vh;
+    line-height: 4px;
+    bottom: 6vh;
+    
+  }
+  
+  .Artist:hover .Artist-content {
+    display: block;
+  }
+
+  .Year {
+    position: fixed;
+    display: inline-block;
+    color: white;
+    font-size: 4vh;
+    margin-left: 26vh;
+  }
+  
+  .Year-content {
+    display: none;
+    position: relative;
+    color: white;
+    min-width: 160px;
+    padding: 4px;
+    z-index: 1;
+    font-size: 2vh;
+    line-height: 4px;
+    bottom: 6vh;
+    
+  }
+  
+  .Year:hover .Year-content {
+    display: block;
+  }
+
+  .Medium {
+    position: fixed;
+    display: inline-block;
+    color: white;
+    font-size: 4vh;
+    margin-left: 45vh;
+  }
+  
+  .Medium-content {
+    display: none;
+    position: relative;
+    color: white;
+    min-width: 160px;
+    padding: 4px;
+    z-index: 1;
+    font-size: 2vh;
+    line-height: 4px;
+    bottom: 6vh;
+    
+  }
+  
+  .Medium:hover .Medium-content {
+    display: block;
+  }
+
+  .Printer {
+    position: fixed;
+    display: inline-block;
+    color: white;
+    font-size: 4vh;
+    margin-left: 77vh;
+  }
+  
+  .Printer-content {
+    display: none;
+    position: relative;
+    color: white;
+    min-width: 160px;
+    padding: 4px;
+    z-index: 1;
+    font-size: 2vh;
+    line-height: 4px;
+    bottom: 6vh;
+    
+  }
+  
+  .Printer:hover .Printer-content {
+    display: block;
+  }
+
+  .Color {
+    position: fixed;
+    display: inline-block;
+    color: white;
+    font-size: 4vh;
+    margin-left: 105vh;
+  }
+  
+  .Color-content {
+    display: none;
+    position: relative;
+    color: white;
+    min-width: 160px;
+    padding: 4px;
+    z-index: 1;
+    font-size: 2vh;
+    line-height: 4px;
+    bottom: 6vh;
+  }
+  
+  .Color:hover .Color-content {
+    display: block;
   }
 
   a:hover {
+    color: red;
+  }
+
+  p:hover {
     color: red;
   }
 
@@ -45,14 +170,12 @@
   
 }
 
-  .poster {
-    
+  .poster { 
     width: 242px;
     height: 327px;
     padding: 20px;
-    
-    border-color: white;
     border-style: solid;
+    border-color: white;
     border-width: 0.5px;
   }
   
@@ -76,8 +199,9 @@
     z-index: 10; 
     
     }
+ 
 
-  .images:hover {
+.images:hover {
     
       opacity:0.3;
       filter:alpha(opacity=40);
