@@ -10,7 +10,8 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
 
     console.log(data); // first, log out your data. Explore it in the browser console.
 
-    const postersContainer = document.querySelector('.posters-container'); // tell JS about the div we added to our html file so we can put content inside it
+    const postersContainer = document.querySelector('.posters-container'); 
+    // tell JS about the div we added to our html file so we can put content inside it
 
     // loop over each record (row) of our Airtable data
     data.records
@@ -23,6 +24,7 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
       // sorting by earlier "release_year"
       return a.fields.Date - b.fields.Date;
     })
+
     
     
     .forEach(poster => {
@@ -37,6 +39,7 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
           <div class="poster">
           <div class="images">
           <img src="${poster.fields.Attachements[0].thumbnails.large.url}" class="img2" width='200'/>
+          
           </div>
           <div class="text">
           <h5>${poster.fields.Name}</h5> 
@@ -45,8 +48,9 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
           <h5>${poster.fields.Date}</h5>
           </div>
           </div>
-        
+          
         `;
+
       // that's it!
       // Try adding or removing items in your Airtable base and see your website update on refresh
     });
