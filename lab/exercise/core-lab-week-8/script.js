@@ -38,7 +38,7 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
       
           <div class="poster">
           <div class="images">
-          <img src="${poster.fields.Attachements[0].thumbnails.large.url}" class="img2" width='200'/>
+          <img src="${poster.fields.Attachements[0].thumbnails.large.url}" class="img2" width='200' onclick="imageclick()"/>
           
           </div>
           <div class="text">
@@ -55,3 +55,10 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
       // Try adding or removing items in your Airtable base and see your website update on refresh
     });
   });
+
+  function imageclick() { 
+
+    const selectedimage = document.querySelector('img2'); 
+
+    console.log("smiles") 
+  }
