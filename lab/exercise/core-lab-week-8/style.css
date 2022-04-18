@@ -17,9 +17,13 @@ body {
   background-color: rgb(36, 36, 36);
   position: fixed;
   width: 139vw;
-  height: 25vh;
+  height: 20vh;
   opacity: 0.6;
   z-index: 999;
+}
+
+.header_background:hover {
+  transition: 1s ease;
 }
 
 h2 {
@@ -220,7 +224,7 @@ p:hover {
   -webkit-transform: scale(1.15);
   -ms-transform: scale(1.15);
   transform: scale(1.15);
-  transition: 1s ease;
+
 }
 
 .background-screen {
@@ -235,7 +239,7 @@ p:hover {
   display: none;
 }
 .show-info {
-  z-index: 3;
+  z-index: 999;
 }
 
 .show-info .text {
