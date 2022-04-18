@@ -19,6 +19,7 @@ body {
   width: 139vw;
   height: 25vh;
   opacity: 0.6;
+  z-index: 999;
 }
 
 h2 {
@@ -27,6 +28,7 @@ h2 {
   margin-left: 3vh;
   opacity: 1;
   position: fixed;
+  z-index: 999;
 }
 
 h1 {
@@ -43,6 +45,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  z-index: 999;
 }
 
 .Artist {
@@ -248,19 +251,18 @@ p:hover {
 h5 {
   font-family: helvetica;
   font-weight: 100;
-  padding: 0em;
+  margin-bottom: -20px;
 }
 
 h3 {
   font-family: helvetica;
   font-weight: 700;
   font-size: 2vh;
-  padding: 0em;
+  margin-bottom: -10px;
 
 
     
   
-
 
 
 

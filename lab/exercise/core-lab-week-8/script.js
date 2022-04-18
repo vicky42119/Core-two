@@ -41,8 +41,8 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
           </div>
           <div class="text">
           <h3>${poster.fields.Name}</h3> 
-          <h5>${poster.fields.Dimensions}</h5>  
           <h5>${poster.fields.Artist}</h5>
+          <h5>${poster.fields.Dimensions}</h5>  
           <h5>${poster.fields.Date}</h5>
           </div>
           </div>
