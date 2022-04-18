@@ -1,236 +1,262 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    letter-spacing: -0.025rem;
-  }
-
-  .header_background {
-    background-color: rgb(36, 36, 36);;
-    position: fixed;
-    width: 139vw;
-    height: 25vh;
-    opacity: 0.6;
-
-  }
-
-  h2 {
- font-size: 2vh;
- color: white;
- margin-left: 3vh;
- opacity: 1;
- position: fixed;
-
-  }
-
-  .container {
-    width: 139vw;
-    height: 290vh;
-    background-color: rgb(36, 36, 36);
-    
-  }
-  .filters {
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-  }
-  
-  .Artist {
-    position: fixed;
-    display: inline-block;
-    color: white;
-    font-size: 4vh;
-    margin-left: 3vh;
-  }
-  
-  .Artist-content {
-    display: none;
-    position: relative;
-    color: white;
-    min-width: 160px;
-    padding: 4px;
-    z-index: 1;
-    font-size: 2vh;
-    line-height: 4px;
-    bottom: 8vh;
-    
-  }
-  
-  .Artist:hover .Artist-content {
-    display: block;
-  }
-
-  .Year {
-    position: fixed;
-    display: inline-block;
-    color: white;
-    font-size: 4vh;
-    margin-left: 26vh;
-  }
-  
-  .Year-content {
-    display: none;
-    position: relative;
-    color: white;
-    min-width: 160px;
-    padding: 4px;
-    z-index: 1;
-    font-size: 2vh;
-    line-height: 4px;
-    bottom: 8vh;
-    
-  }
-  
-  .Year:hover .Year-content {
-    display: block;
-  }
-
-  .Medium {
-    position: fixed;
-    display: inline-block;
-    color: white;
-    font-size: 4vh;
-    margin-left: 45vh;
-  }
-  
-  .Medium-content {
-    display: none;
-    position: relative;
-    color: white;
-    min-width: 160px;
-    padding: 4px;
-    z-index: 1;
-    font-size: 2vh;
-    line-height: 4px;
-    bottom: 8vh;
-    
-  }
-  
-  .Medium:hover .Medium-content {
-    display: block;
-  }
-
-  .Printer {
-    position: fixed;
-    display: inline-block;
-    color: white;
-    font-size: 4vh;
-    margin-left: 77vh;
-  }
-  
-  .Printer-content {
-    display: none;
-    position: relative;
-    color: white;
-    min-width: 160px;
-    padding: 4px;
-    z-index: 1;
-    font-size: 2vh;
-    line-height: 4px;
-    bottom: 8vh;
-    
-  }
-  
-  .Printer:hover .Printer-content {
-    display: block;
-  }
-
-  .Color {
-    position: fixed;
-    display: inline-block;
-    color: white;
-    font-size: 4vh;
-    margin-left: 105vh;
-  }
-  
-  .Color-content {
-    display: none;
-    position: relative;
-    color: white;
-    min-width: 160px;
-    padding: 4px;
-    z-index: 1;
-    font-size: 2vh;
-    line-height: 4px;
-    bottom: 8vh;
-  }
-  
-  .Color:hover .Color-content {
-    display: block;
-  }
-
-  a:hover {
-    color: red;
-  }
-
-  p:hover {
-    color: red;
-  }
-
-  
-  .posters-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgb(61, 61, 61);
-  
+  box-sizing: border-box;
 }
 
-  .poster { 
-    width: 242px;
-    height: 327px;
-    padding: 20px;
-    border-style: solid;
-    border-color: rgb(255, 255, 255);
-    border-width: 0.3px;
-    
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.025rem;
+}
+
+.header_background {
+  background-color: rgb(36, 36, 36);
+  position: fixed;
+  width: 139vw;
+  height: 25vh;
+  opacity: 0.6;
+}
+
+h2 {
+  font-size: 2vh;
+  color: white;
+  margin-left: 3vh;
+  opacity: 1;
+  position: fixed;
+}
+
+h1 {
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  width: 153vw;
+  height: 330vh;
+  background-color: rgb(36, 36, 36);
+}
+.filters {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.Artist {
+  position: fixed;
+  display: inline-block;
+  color: white;
+  font-size: 4vh;
+  margin-left: 3vh;
+}
+
+.Artist-content {
+  display: none;
+  position: relative;
+  color: white;
+  min-width: 160px;
+  padding: 4px;
+  z-index: 1;
+  font-size: 2vh;
+  line-height: 4px;
+  bottom: 8vh;
+}
+
+.Artist:hover .Artist-content {
+  display: block;
+}
+
+.Year {
+  position: fixed;
+  display: inline-block;
+  color: white;
+  font-size: 4vh;
+  margin-left: 28vh;
+}
+
+.Year-content {
+  display: none;
+  position: relative;
+  color: white;
+  min-width: 160px;
+  padding: 4px;
+  z-index: 1;
+  font-size: 2vh;
+  line-height: 4px;
+  bottom: 8vh;
+}
+
+.Year:hover .Year-content {
+  display: block;
+}
+
+.Medium {
+  position: fixed;
+  display: inline-block;
+  color: white;
+  font-size: 4vh;
+  margin-left: 48vh;
+}
+
+.Medium-content {
+  display: none;
+  position: relative;
+  color: white;
+  min-width: 160px;
+  padding: 4px;
+  z-index: 1;
+  font-size: 2vh;
+  line-height: 4px;
+  bottom: 8vh;
+}
+
+.Medium:hover .Medium-content {
+  display: block;
+}
+
+.Printer {
+  position: fixed;
+  display: inline-block;
+  color: white;
+  font-size: 4vh;
+  margin-left: 81vh;
+}
+
+.Printer-content {
+  display: none;
+  position: relative;
+  color: white;
+  min-width: 160px;
+  padding: 4px;
+  z-index: 1;
+  font-size: 2vh;
+  line-height: 4px;
+  bottom: 8vh;
+}
+
+.Printer:hover .Printer-content {
+  display: block;
+}
+
+.Color {
+  position: fixed;
+  display: inline-block;
+  color: white;
+  font-size: 4vh;
+  margin-left: 110vh;
+}
+
+.Color-content {
+  display: none;
+  position: relative;
+  color: white;
+  min-width: 160px;
+  padding: 4px;
+  z-index: 1;
+  font-size: 2vh;
+  line-height: 4px;
+  bottom: 8vh;
+}
+
+.Color:hover .Color-content {
+  display: block;
+}
+
+a:hover {
+  color: red;
+}
+
+p:hover {
+  color: red;
+}
+
+.posters-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(61, 61, 61);
+}
+
+.poster {
+  width: 242px;
+  height: 327px;
+  padding: 20px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 0.3px;
+}
+
+.text {
+  line-height: 19px;
+  color: white;
+  position: relative;
+  bottom: 3vh;
+  left: 40vh;
+  display: none;
 
 
+}
 
-  
-  .text {
-    line-height: 1px;
-    color: white;
-    position: relative;
-    bottom: 15vh;
-    
-      
-  }
+.img2 {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  box-shadow: 5px 5px 10px black;
+  z-index: 999;
+  transition: 1s ease;
+}
 
-
-
-
-  .img2 {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    object-fit: cover;
-    box-shadow: 5px 5px 10px black; 
-    z-index: 999;
-    transition: 1s ease;
-    }
-
-
- .img2:hover {
+.img2:hover {
   -webkit-transform: scale(1.15);
   -ms-transform: scale(1.15);
   transform: scale(1.15);
   transition: 1s ease;
 }
+
+.background-screen {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.75;
+  background: black;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.show-info {
+  z-index: 3;
+}
+
+.show-info .text {
+  display: block;
+}
+
+.show-info img,
+.show-info:hover img {
+  transform: scale(2);
+}
+
+
+h5 {
+  font-family: helvetica;
+  font-weight: 100;
+  padding: 0em;
+}
+
+h3 {
+  font-family: helvetica;
+  font-weight: 700;
+  font-size: 2vh;
+  padding: 0em;
+
 
     
   

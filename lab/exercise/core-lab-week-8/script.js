@@ -10,39 +10,37 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
 
     console.log(data); // first, log out your data. Explore it in the browser console.
 
-    const postersContainer = document.querySelector('.posters-container'); 
+    const postersContainer = document.querySelector('.posters-container');
     // tell JS about the div we added to our html file so we can put content inside it
 
     // loop over each record (row) of our Airtable data
     data.records
-    .slice(0, 70) // only show the first 5 albums
-    .filter(poster => {
-      // filter the data down to only albums marked true for "has_listened_fully" in my Airtable base
-      return poster.fields.Medium;
-    })
-    .sort((a, b) => {
-      // sorting by earlier "release_year"
-      return a.fields.Date - b.fields.Date;
-    })
+      .slice(0, 70) // only show the first 5 albums
+      .filter(poster => {
+        // filter the data down to only albums marked true for "has_listened_fully" in my Airtable base
+        return poster.fields.Medium;
+      })
+      .sort((a, b) => {
+        // sorting by earlier "release_year"
+        return a.fields.Date - b.fields.Date;
+      })
 
-    
-    
-    .forEach(poster => {
-      console.log(poster); // look in the console at each album to see what fields we can access (these are your own table headers from Airtable)
+      .forEach(poster => {
+        console.log(poster); // look in the console at each album to see what fields we can access (these are your own table headers from Airtable)
 
-      // now we add html to our albumsContainer div
-      // this is where we take our data from Airtable and put it in our html
-      // think of this chunk of HTML as a component template for each entry in our database
-      // note the backticks `` below. This allows us to add html + js together using ${field} in a single block of code
-      postersContainer.innerHTML += `
+        // now we add html to our albumsContainer div
+        // this is where we take our data from Airtable and put it in our html
+        // think of this chunk of HTML as a component template for each entry in our database
+        // note the backticks `` below. This allows us to add html + js together using ${field} in a single block of code
+        postersContainer.innerHTML += `
       
-          <div class="poster">
+          <div class="poster" onclick="imageClick()">
           <div class="images">
-          <img src="${poster.fields.Attachements[0].thumbnails.large.url}" class="img2" width='200' onclick="imageclick()"/>
+          <img src="${poster.fields.Attachements[0].thumbnails.large.url}" class="img2" width='200' />
           
           </div>
           <div class="text">
-          <h5>${poster.fields.Name}</h5> 
+          <h3>${poster.fields.Name}</h3> 
           <h5>${poster.fields.Dimensions}</h5>  
           <h5>${poster.fields.Artist}</h5>
           <h5>${poster.fields.Date}</h5>
@@ -51,14 +49,21 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
           
         `;
 
-      // that's it!
-      // Try adding or removing items in your Airtable base and see your website update on refresh
-    });
+        // that's it!
+        // Try adding or removing items in your Airtable base and see your website update on refresh
+      });
   });
 
-  function imageclick() { 
+const screen = document.querySelector('.background-screen');
+let currentItem;
 
-    const selectedimage = document.querySelector('img2'); 
+function imageClick() {
+  screen.style.display = 'block';
+  currentItem = event.currentTarget;
+  currentItem.classList.add('show-info');
+}
 
-    console.log("smiles") 
-  }
+function closeScreen() {
+  screen.style.display = 'none';
+  currentItem.classList.remove('show-info');
+}
