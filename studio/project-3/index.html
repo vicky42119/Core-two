@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airtable</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <div class="header_background"></div>
+        <h2>Swiss Graphic Design Archive (1910-1980)</h2>
+      </div>
+      <div class="filters">
+
+        <div class="Artist">
+          <label for="Artist"> Artist</label>
+          <select id="Artist" onchange="handleDropdown()">
+            <option value="All" selected>All</option>
+            <option value="artist-1">Armin Hofmann</option>
+            <option value="artist-2">Emil Cardinaux</option>
+            <option value="artist-2">Emile Ruder</option>
+            <option value="artist-2">Ernst Keller</option>
+            <option value="artist-2">Jan Tschichold</option>
+            <option value="artist-2">Karl Gerstner</option>
+            <option value="artist-2">Josef Müller-Brockmann</option>
+            <option value="artist-2">Max Bill</option>
+            <option value="artist-2">Richard Paul Lohse</option>
+            <option value="artist-2">Theo H.Ballmer</option> 
+        </select>
+        </div>
+        
+        <div class="Year">
+          <h1><a> Year </a></h1>
+          <div class="Year-content">
+            <p>1910</p>
+            <p>1920</p>
+            <p>1930</p>
+            <p>1940</p>
+            <p>1950</p>
+            <p>1960</p>
+            <p>1970</p>
+            <p>1980</p>
+          </div>
+        </div>
+        <div class="Medium">
+          <h1><a> Medium </a></h1>
+          <div class="Medium-content">
+            <p>Letterpress</p>
+            <p>Linocut</p>
+            <p>Lithograph</p>
+            <p>Offset Lithograph </p>
+            <p>Photolithograph</p>
+            <p>Silkscreen</p>
+            <p>Screenprint</p>
+          </div>
+        </div>
+        <div class="Printer">
+          <h1><a> Printer </a></h1>
+          <div class="Printer-content">
+            <p>xyzba</p>
+            <p>xyzba</p>
+            <p>xyzba</p>
+            <p>xyzba</p>
+          </div>
+        </div>
+        <div class="Color">
+          <h1><a> Color </a></h1>
+          <div class="Color-content">
+            <p>Black</p>
+            <p>Blue</p>
+            <p>Brown</p>
+            <p>Green</p>
+            <p>Orange</p>
+            <p>Red</p>
+            <p>Yellow</p>
+            <p>White</p>
+          </div>
+        </div>
+      </div>
+      <div class="posters-container">
+        <div class="poster">
+          <div class="images"></div>
+          <div class="text"></div>
+        </div>
+        <!-- add content from Airtable here via javascript -->
+      </div>
+    </main>
+    <div class="background-screen" onclick="closeScreen()"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
