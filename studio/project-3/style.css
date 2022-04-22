@@ -50,32 +50,25 @@ h1 {
   flex-wrap: wrap;
   flex-direction: row;
   z-index: 999;
+  top: 6vh;
+}
+
+select {
+  position: fixed;
+  top: 13vh;
+  margin-left: -8vh
+
 }
 
 .Artist {
   position: fixed;
   display: inline-block;
-  top: 2em;
   color: white;
   font-size: 4vh;
   margin-left: 3vh;
 }
 
-.Artist-content {
-  display: none;
-  position: relative;
-  color: white;
-  min-width: 160px;
-  padding: 4px;
-  z-index: 1;
-  font-size: 2vh;
-  line-height: 4px;
-  bottom: 8vh;
-}
 
-.Artist:hover .Artist-content {
-  display: block;
-}
 
 .Year {
   position: fixed;
@@ -85,45 +78,17 @@ h1 {
   margin-left: 28vh;
 }
 
-.Year-content {
-  display: none;
-  position: relative;
-  color: white;
-  min-width: 160px;
-  padding: 4px;
-  z-index: 1;
-  font-size: 2vh;
-  line-height: 4px;
-  bottom: 8vh;
-}
 
-.Year:hover .Year-content {
-  display: block;
-}
+
 
 .Medium {
   position: fixed;
   display: inline-block;
   color: white;
   font-size: 4vh;
-  margin-left: 48vh;
+  margin-left: 40vh;
 }
 
-.Medium-content {
-  display: none;
-  position: relative;
-  color: white;
-  min-width: 160px;
-  padding: 4px;
-  z-index: 1;
-  font-size: 2vh;
-  line-height: 4px;
-  bottom: 8vh;
-}
-
-.Medium:hover .Medium-content {
-  display: block;
-}
 
 .Printer {
   position: fixed;
@@ -133,53 +98,15 @@ h1 {
   margin-left: 81vh;
 }
 
-.Printer-content {
-  display: none;
-  position: relative;
-  color: white;
-  min-width: 160px;
-  padding: 4px;
-  z-index: 1;
-  font-size: 2vh;
-  line-height: 4px;
-  bottom: 8vh;
-}
-
-.Printer:hover .Printer-content {
-  display: block;
-}
 
 .Color {
   position: fixed;
   display: inline-block;
   color: white;
   font-size: 4vh;
-  margin-left: 110vh;
+  margin-left: 75vh;
 }
 
-.Color-content {
-  display: none;
-  position: relative;
-  color: white;
-  min-width: 160px;
-  padding: 4px;
-  z-index: 1;
-  font-size: 2vh;
-  line-height: 4px;
-  bottom: 8vh;
-}
-
-.Color:hover .Color-content {
-  display: block;
-}
-
-a:hover {
-  color: red;
-}
-
-p:hover {
-  color: red;
-}
 
 .posters-container {
   display: flex;

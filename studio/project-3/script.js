@@ -1,4 +1,36 @@
+let DropdownArtistValue ='All'; // initial value
+    
+function handleArtistDropdown() {
+  console.log(event.target.value);
+  DropdownValue = event.target.value;
+  generateContent();
+}
 
+let DropdownYearValue ='All'; // initial value
+    
+function handleYearDropdown() {
+  console.log(event.target.value);
+  DropdownValue = event.target.value;
+  generateContent();
+}
+
+let DropdownMediumValue ='All'; // initial value
+    
+function handleMediumDropdown() {
+  console.log(event.target.value);
+  DropdownValue = event.target.value;
+  generateContent();
+}
+
+let DropdownColorValue ='All'; // initial value
+    
+function handleColorDropdown() {
+  console.log(event.target.value);
+  DropdownValue = event.target.value;
+  generateContent();
+}
+
+function generateContent(){
 fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
   headers: {
     Authorization: 'Bearer keyZA1e5QRYt1En9y', // this is your API key, starting with 'key...' found in your Airtable account
@@ -10,20 +42,31 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
 
     console.log(data); // first, log out your data. Explore it in the browser console.
 
+
+    
     const postersContainer = document.querySelector('.posters-container');
     // tell JS about the div we added to our html file so we can put content inside it
 
     // loop over each record (row) of our Airtable data
+
     data.records
       .slice(0, 70) // only show the first 5 albums
       .filter(poster => {
-        // filter the data down to only albums marked true for "has_listened_fully" in my Airtable base
-        return poster.fields.Medium;
+        return DropdownArtistValue === 'All' ? poster : poster.fields.Artist === DropdownArtistValue;
       })
-      .sort((a, b) => {
-        // sorting by earlier "release_year"
-        return a.fields.Date - b.fields.Date;
+
+      .filter(poster => {
+        return DropdownYearValue === 'All' ? poster : poster.fields.Year === DropdownYearValue;
       })
+
+      .filter(poster => {
+        return DropdownMediumValue === 'All' ? poster : poster.fields.Medium === DropdownMediumValue;
+      })
+
+      .filter(poster => {
+        return DropdownColorValue === 'All' ? poster : poster.fields.Color === DropdownColorValue;
+      })
+
 
       .forEach(poster => {
         console.log(poster); // look in the console at each album to see what fields we can access (these are your own table headers from Airtable)
@@ -43,7 +86,7 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
           <h3>${poster.fields.Name}</h3> 
           <h5>${poster.fields.Artist}</h5>
           <h5>${poster.fields.Dimensions}</h5>  
-          <h5>${poster.fields.Date}</h5>
+          <h5>${poster.fields.Year}</h5>
           </div>
           </div>
           
@@ -52,7 +95,10 @@ fetch('https://api.airtable.com/v0/appDsgDNlMVCrpbey/Table%201', {
         // that's it!
         // Try adding or removing items in your Airtable base and see your website update on refresh
       });
-  });
+    
+  });    
+}
+generateContent()
 
 const screen = document.querySelector('.background-screen');
 let currentItem;
@@ -67,44 +113,6 @@ function closeScreen() {
   screen.style.display = 'none';
   currentItem.classList.remove('show-info');
 }
-
-
-console.log(data);
-
-let DropdownValue ='All';
-
-function handleDropdown() {
-  console.log(event,target.value);
-  DropdownValue = event.target.value;
-  generateContent();
-
-}
-
-const postersContainer = document.querySelector('.posters-container');
-function generateContent() {
-data
-.filter(poster => {
-  return poster.Artist === DropdownValue;
-})
-
-.forEach(poster => {
-  console.log(poster);
-  postersContainer.innerHTML += 
-  <div class="poster">
-          <div class="images">
-          <img src="${poster.fields.Attachements[0].thumbnails.large.url}" class="img2" width='200' />
-          </div>
-          <div class="text">
-          <h3>${poster.fields.Name}</h3> 
-          <h5>${poster.fields.Artist}</h5>
-          <h5>${poster.fields.Dimensions}</h5>  
-          <h5>${poster.fields.Date}</h5>
-          </div>
-  </div>
-    ; 
-  });
-}
-generateContent();
 
 
 
