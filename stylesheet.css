@@ -1,29 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@media screen and (max-width: 540px) {
-    .view {
-        width: 400px;
-    }
-}
 
-@media screen and (min-width: 540px) and (max-width: 780px) {
-    .view {
-        width: 600px;
-    }
 
 
 html {
-
-    background-color: rgb(207, 207, 207);
-    overflow-x:hidden;
-    overflow-y: auto;
-    max-height: 100%;
+    height: 100vh;
+    background-color: rgb(223, 223, 223);
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
-
-.body {
-    overflow-x:hidden;
-    overflow-x:hidden;
-    overflow-y: auto;
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    max-width: 100%
 }
 
 .nav-bar {
@@ -31,132 +20,100 @@ html {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
     border-bottom: solid;
     border-width: 1pt;
-    z-index: 999;
-    height: 30pt;
-    min-width: 100%;
+    height: 27pt;
+    width: 99%;
+    position: fixed;
+    top: -1vh;
+    margin-top: 1vh;
+    background-color: rgb(223, 223, 223);
+    z-index: 999 ;
+}
+
+.nav-bar-right {
+position: relative;
+    top: 1px;
 
 }
 
-
-.nav-bar-center{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: relative;
-    top: 2vh;
-    right: 3vh;
-    
-
-}
-
-.nav-bar-right{
-    position: relative;
-    top: 2vh;
-
-}
-
-.nav-bar-left{
-    position: relative;
-    margin: 1vh;
-    bottom: 1vh;
-
-}
 
 
 
 
 h4 {
     font-family: 'Work Sans', sans-serif;
-
-    font-size: 10pt;
-    font-weight: 800;
-
-}
-
-a {
-    font-family: 'Work Sans', sans-serif;
-    margin-left: 6px;
-    margin-right: 6px;
     font-size: 10pt;
     font-weight: 800;
     text-decoration: none;
     color: black;
-
+    position: relative;
+    top: -0.5em;
 }
 
-a:hover  { color: rgb(255, 247, 133);
-
+a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10pt;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
 }
 
+a:hover  { 
+    color: rgb(255, 247, 133);
+
+}
 
 
 
 h1 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 20em;
+    font-size: 22em;
     font-weight: 700;
-
-}
-
-
-
-.main-content {
-position: fixed;
-opacity: 0.5;
-left: 1vh;
-color: rgb(0, 0, 0);
-text-align: left;
-z-index: 999;
-
-}
-
-.main-content2 {
-    position: fixed;
-    text-align: left;
+    padding: 0;
+    margin:0;
+    line-height: 7pt;
     opacity: 0.5;
-    color:rgb(0, 0, 0);
-    z-index: 999;
-
-}
-.main-content3 {
-    position: fixed;
-    text-align: left;
-    opacity: 0.5;
-    color:rgb(0, 0, 0);
-    z-index: 999;
+    color: rgb(34, 34, 34);
 
 }
 
-.main-content4 {
-    position: fixed;
-    left: 1vh;
-    text-align: left;
-    opacity: 0.5;
-    color:rgb(0, 0, 0);
-    z-index: 999;
+
+
+.title {
+    position: relative;
+    top: 9.5em;
+    z-index: 998;
+
+
+}
+
+.title2 {
+    position: relative;
+    top: 24em ;
+    z-index: 998;
+
 
 }
 
 h2 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 12pt;
+    font-size: 13pt;
     font-weight: 500;
+    line-height: 14pt;
 
 }
 
 .introduction {
-    position: fixed;
-    bottom: 10vh;
+    position: relative;
+    top: 32em;
     font-family: 'Work Sans', sans-serif;
-    max-width: 60vh;
-    justify-content: right;
-    z-index: 999;
+    text-align: left;
     margin-left: 2vh;
-
-
+    max-width: 30em;
 
 }
 
@@ -171,13 +128,13 @@ h3 {
 }
 
 .square {
-    height: 540px;
+    position: relative;
+    top: -7em;
+    height: 560px;
     width: 810px;
     background-color: rgb(72, 0, 240);
-    opacity: 0.5;
-    position: fixed;
     left: 40%;
-    z-index: 1;
+    opacity: 0.5;
 
 }
 
@@ -186,52 +143,29 @@ h3 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    position: fixed;
-    bottom: 3vh;
     border-bottom: solid;
     border-top: solid;
     border-width: 1pt;
-    z-index: 999;
     height: 27pt;
     min-width: 100%;
+    position: relative;
+    top: -3em;
+    margin-top: 1vh;
 }
 
 
 .footer-bar-center{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    position: relative;
-    display: none;
-    
+
+    display: none;   
 
 }
 
-.footer-bar-right{
-    position: relative;
-    top: 1vh;
-    
 
-}
-
-.footer-bar-left{
-    position: relative;
-    bottom: 1vh;
-    margin-left: 1vh;
-
-}
 
 
 .Works {
-
-position: fixed;
-top: 30em;
-left: 2vh;
-
-
-
-
-
+    position: relative;
+    top: -6em ;
 }
 
 h5 {
@@ -240,59 +174,77 @@ h5 {
     font-weight: 800;
     line-height: 25pt;
     color: rgb(41, 41, 41);
-    
 
 }
+
 
 h6 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1vw;
+    font-size: 10pt;
     font-weight: 500;
     color: rgb(41, 41, 41);
-
-}
-
-.project-box {
-
-    position: fixed;
-    top: 100em;
-    height: 106vh;
-    width: 100%;
-    background-color: rgb(175, 175, 175);
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    flex: 1 1;
-    justify-content: center;
-    margin-bottom: 2vh;
-    margin-left: 1vh;
-    margin-right: 2vh;
-
-}
-
-.project-box2 {
-    position: fixed;
-    height: 158vh;
-    width: 100%;
-   background-color: rgb(175, 175, 175);
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    flex: 1 1;
-    justify-content: center;
-    margin-bottom: 2vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
-
+    line-height: 12pt;
+    
 }
 
 .project-title{
-   
+       
     position: relative;
-    left: 2vh; 
-    max-width: 35%; 
+    top: -3em;
+    max-width: 22em; 
+
     }
 
+.project-box {
+   
+    position: relative;
+    top: -17em ;
+    min-height: 100%;
+    width: 100%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1pt;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    flex: 1 2;
+    margin-bottom: 2vh;
+    line-height: 0em;
+    padding-top: 3pt;
+    padding-bottom: 3pt;
+
+}
+
+
+
+.project-title2{
+   
+    position: relative;
+    top: -3em;
+    max-width: 22em; 
+    }
+
+
+    .project-box2 {
+   
+        position: relative;
+        top: -17em ;
+        min-height: 100%;
+        width: 100%;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-width: 1pt;
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        flex: 1 1;
+        margin-bottom: 2vh;
+        line-height: 0em;
+        padding-top: 3pt;
+        padding-bottom: 3pt;
+    
+    }
+    
 
 
 .Project-images{
@@ -300,24 +252,18 @@ h6 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 2vh;
     justify-content: right;
-    gap: 1vh;
       
 }
 
 
 img {
     object-fit: contain;
-    max-width:45%;
-    max-height: 45%;
-    background-color: white;
-    margin-left: 1vh;
+    max-width:30em;
+   max-height: 100%;
+    margin: 3pt;
     transition: .2s ease;
-    border-width: 0.5px;
-    border-style: solid;
-    border-color: rgb(41, 41, 41);
-    padding: 2px;
+
 
  
 }
@@ -326,11 +272,188 @@ img:hover {
     transform: scale(1.2);
 }
 
-.simple-mockup {
-    display: none;
-  }
-  .real-life-mockup:hover + .simple-mockup {
-    display: inline;
-  }
+@media screen and (max-device-width: 640px){
 
-  
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: solid;
+        border-width: 1pt;
+        height: 27pt;
+        width: 96%;
+        position: fixed;
+        top: -1vh;
+        margin-top: 1vh;
+        background-color: rgb(223, 223, 223);
+        z-index: 999 ;
+    }
+
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 7.5em;
+    font-weight: 700;
+    padding: 0;
+    margin:0;
+    line-height: 3pt;
+    opacity: 0.5;
+    color: rgb(34, 34, 34);
+
+}
+
+
+
+.title {
+    position: relative;
+    top: 7em;
+    z-index: 998;
+
+
+}
+
+.title2 {
+    position: relative;
+    top: 12em ;
+    z-index: 998;
+}
+
+
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+    line-height: 12pt;
+
+}
+
+.square {
+    position: relative;
+    top: -7em;
+    height: 275px;
+    width: 810px;
+    background-color: rgb(72, 0, 240);
+    left: 40%;
+    opacity: 0.5;
+
+}
+
+
+.introduction {
+    position: relative;
+    top: 15em;
+    font-family: 'Work Sans', sans-serif;
+    max-width: 20em;
+    margin-left: -1pt;
+
+}
+
+.footer-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid;
+    border-top: solid;
+    border-width: 1pt;
+    height: 27pt;
+    min-width: 100%;
+    position: relative;
+    top: -2em;
+    margin-top: 1vh;
+}
+
+
+.footer-bar-center{
+
+    display: none;   
+
+}
+
+h3 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50pt;
+    font-weight: 700;
+    position: relative;
+    bottom: 8vh;
+    color:rgb(49, 49, 49);
+    
+}
+
+.Works {
+    position: relative;
+    top: -2em ;
+}
+
+.project-title {
+    position: relative;
+    top: -4vh;
+    line-height: 0em;
+
+}
+
+.project-title2 {
+    position: relative;
+    top: -4vh;
+
+}
+
+.project-box {
+    position: relative;
+    top: -10em ;
+    gap: 20px;
+}
+
+.project-box2 {
+    position: relative;
+    top: -10em ;
+    gap: 20px;
+}
+
+.Project-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+      
+}
+
+
+img {
+    object-fit: contain;
+    max-width:15em;
+    max-height: 100%;
+    margin: 3pt;
+    transition: .2s ease;
+
+
+ 
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+h6 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 8pt;
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+    line-height: 10pt;
+    position: relative;
+    top: -6vh;
+}
+
+h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20pt;
+    font-weight: 800;
+    line-height: 22pt;
+    color: rgb(41, 41, 41);
+
+}
+
+
+
+    /* Your CSS rules for your mobile phones here */
+}
