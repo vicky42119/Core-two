@@ -51,7 +51,6 @@
     text-decoration: none;
   }
 
-
   
 .Nav-bar {  grid-area: 2 / 1 / 3 / 4;
             border-top: 1px;
@@ -60,8 +59,7 @@
             border-right: 0;
             border-style: solid;
             border-color: rgb(116, 116, 116);
-            
-
+        
             }
 
 .Nav-bar ul {
