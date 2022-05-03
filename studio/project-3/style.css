@@ -193,7 +193,12 @@ h3 {
   font-size: 10pt;
   margin-bottom: -10px;
 
+}
 
+.hide {
+  opacity: 0;
+
+}
     
   
 
