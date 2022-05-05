@@ -12,15 +12,24 @@ function setup() {
   createCanvas(1000, 600);
   noStroke();
   background(255);
-  rectWidth = 100;
-  rectHeight = 100;
+  rectWidth = 50;
+  Height = 50;
 
  
 }
 
 function draw() {
   // keep draw() here to continue looping while waiting for keys
+
+  keyPressed()
+
+
 }
+
+
+
+
+
 
 function keyPressed() {
   let keyIndex = -1;
@@ -37,6 +46,6 @@ function keyPressed() {
     randFill_b = Math.floor(Math.random() * 255 + 1);
     fill(randFill_r, randFill_g, randFill_b);
     let x = map(keyIndex, 0, 25, 0, width - rectWidth);
-    rect(x, 0, rectWidth, height);
+    ellipse(x, 0, rectWidth, height);
   }
 }
