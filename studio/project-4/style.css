@@ -1,7 +1,52 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  margin-left: 7%;
+ 
 }
 canvas {
   display: block;
+  position: fixed;
+  top: 7%;
+  border-width: 2pt;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+
+
+}
+
+h1 {
+
+}
+
+.title {
+  position: relative;
+  top: -2vh;
+
+}
+
+.type-bar {
+
+  
+
+}
+
+h2 {
+
+  font-size: 1.3em;
+  color: rgb(190, 190, 190);
+  margin-left: 2vh;
+
+
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  height: 7vh;
+  width: 124vh;
+  position: relative;
+  top: 73vh;
+  border-width: 2pt;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
 }

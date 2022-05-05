@@ -1,10 +1,21 @@
+/*
+ * @name Keyboard
+ * @description Click on the image to give it focus and
+ * press the letter keys to create forms in time and space.
+ * Each key has a unique identifying number. These numbers
+ * can be used to position shapes in space.
+ */
 let rectWidth;
+let rectHeight;
 
 function setup() {
-  createCanvas(720, 400);
+  createCanvas(1000, 600);
   noStroke();
-  background(230);
-  rectWidth = width / 4;
+  background(255);
+  rectWidth = 100;
+  rectHeight = 100;
+
+ 
 }
 
 function draw() {
@@ -18,7 +29,7 @@ function keyPressed() {
   }
   if (keyIndex === -1) {
     // If it's not a letter key, clear the screen
-    background(230);
+    background(255);
   } else {
     // It's a letter key, fill a rectangle
     randFill_r = Math.floor(Math.random() * 255 + 1);
