@@ -1,4 +1,9 @@
-html, body {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+html, 
+
+body {
   margin-left: 7%;
  
 }
@@ -14,28 +19,44 @@ canvas {
 }
 
 h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  margin-right: 33vh;
+
 
 }
 
 .title {
   position: relative;
   top: -2vh;
+  display: flex;
+  flex-direction: row;
+
 
 }
 
-.type-bar {
+.type {
+  position: relative;
+  top: 70vh;
 
   
 
 }
 
 h2 {
-
-  font-size: 1.3em;
-  color: rgb(190, 190, 190);
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7em;
+  color: rgb(0, 0, 0);
   margin-left: 2vh;
 
 
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  
 }
 
 input[type=text] {
@@ -45,21 +66,57 @@ input[type=text] {
   height: 7vh;
   width: 124vh;
   position: relative;
-  top: 73vh;
+  top: 68vh;
   border-width: 2pt;
   border-color: rgb(0, 0, 0);
   border-style: solid;
 }
 
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
+button {
+  z-index: 999;
   position: relative;
+  top: 68vh;
   width: 10vh;
-  display: none;
+  height: 7vh;
+  font-size: 1em;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+
+ 
 
 }
+
+.button:hover {
+  background-color: rgb(189, 189, 189);
+
+}
+
+.back {
+display: flex;
+flex-direction: row;
+gap: 10pt;
+position: relative;
+top: 69vh;
+left: 130vh
+
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  height: 0.5vh;
+  width: 0.5vh;
+  position: relative;
+  top: 1vh;
+
+  }
+
+  .arrow:hover {
+    border: solid rgb(255, 0, 0);
+    border-width: 0 2px 2px 0;
+    
+    }
