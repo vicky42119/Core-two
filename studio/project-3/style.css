@@ -40,71 +40,61 @@ h1 {
 }
 
 .container {
-  width: 153vw;
-  height: 330vh;
+  width: 177.5em;
+  min-height: 330vh;
   background-color: rgb(36, 36, 36);
 }
 .filters {
   position: fixed;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  justify-content:space-evenly;
   z-index: 999;
   top: 6vh;
-}
-
-select {
-  position: fixed;
-  top: 13vh;
-  margin-left: -8vh
+  flex-grow: 0;
+  gap: 30pt;
+  margin-left: 4vh;
 
 }
 
 .Artist {
-  position: fixed;
-  display: inline-block;
+ 
+  width: 15vh;
   color: white;
   font-size: 4vh;
-  margin-left: 3vh;
 }
 
 
 
 .Year {
-  position: fixed;
+  width: 15vh;
   display: inline-block;
   color: white;
   font-size: 4vh;
-  margin-left: 28vh;
 }
 
 
-
-
 .Medium {
-  position: fixed;
+  width: 15vh;
   display: inline-block;
   color: white;
   font-size: 4vh;
-  margin-left: 40vh;
 }
 
 
 .Printer {
-  position: fixed;
+  width: 15vh;
   display: inline-block;
   color: white;
   font-size: 4vh;
-  margin-left: 81vh;
 }
 
 
 .Color {
-  position: fixed;
+  width: 15vh;
   display: inline-block;
   color: white;
   font-size: 4vh;
-  margin-left: 75vh;
 }
 
 
@@ -119,9 +109,9 @@ select {
 }
 
 .poster {
-  width: 242px;
-  height: 327px;
-  padding: 20px;
+  width: 350px;
+  height: 500px;
+  padding: 35px;
   border-style: solid;
   border-color: rgb(255, 255, 255);
   border-width: 0.3px;
@@ -132,7 +122,7 @@ select {
   color: white;
   position: relative;
   bottom: 3vh;
-  left: 40vh;
+  left: 50vh;
   display: none;
 
 
@@ -176,7 +166,7 @@ select {
 
 .show-info img,
 .show-info:hover img {
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 
@@ -199,6 +189,25 @@ h3 {
   opacity: 0;
 
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2pt;
+  border-color: white;
+  padding: 0 0 0 0;
+  margin: 0;
+  width: 15vh;
+  cursor: inherit;
+  z-index: 1;
+  outline: none;
+  color: white;
+  font-size: 0.5em;
+}
+
+
     
   
 

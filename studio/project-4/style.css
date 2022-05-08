@@ -4,16 +4,18 @@
 html, 
 
 body {
-  margin-left: 7%;
+
  
 }
 canvas {
   display: block;
   position: fixed;
   top: 7%;
+
   border-width: 2pt;
   border-color: rgb(0, 0, 0);
-  border-style: solid;
+  border-top-style: solid;
+  border-bottom-style: solid;
 
 
 }
