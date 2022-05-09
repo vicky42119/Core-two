@@ -144,7 +144,7 @@ p {
     animation-timing-function: linear;
   }
   .border {
-    border: 5px solid black;
+    border: 2px solid black;
   }
   .circle {
     position: absolute;
