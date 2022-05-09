@@ -128,7 +128,7 @@ p {
     perspective: 1000px;
     right: 0.75vh;
     position: relative;
-    top: 34vh;
+    top: 35vh;
 
   }
   .container {
@@ -144,7 +144,7 @@ p {
     animation-timing-function: linear;
   }
   .border {
-    border: 2px solid black;
+    border: 5px solid black;
   }
   .circle {
     position: absolute;
