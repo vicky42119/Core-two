@@ -124,13 +124,12 @@ p {
   
   .scene {
     perspective: 1000px;
-    position: relative;
-    top: -26vh;
     right: 0.75vh;
+    position: relative;
+    top: -22vh;
 
   }
   .container {
-    margin-top: 4vh;
     margin-left: auto;
     margin-right: auto;
     position: relative;
