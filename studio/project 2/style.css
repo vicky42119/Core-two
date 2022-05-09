@@ -13,7 +13,8 @@ html {
 .title-text {
 overflow-x: hidden;
 position: relative;
-margin-top: 10vh;
+top: 10vh;
+
 }
 
 svg {
@@ -46,7 +47,7 @@ svg {
     position: relative;
     text-align: center;
     color: white;
-    top: -20vh;
+
 }
 
 
@@ -59,6 +60,7 @@ a {
     margin-right: 40%;
     position: relative;
     left: 1vh;
+    bottom: -12.5vh;
 
     
 }
@@ -126,15 +128,15 @@ p {
     perspective: 1000px;
     right: 0.75vh;
     position: relative;
-    top: -24vh;
+    top: 34vh;
 
   }
   .container {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 130px;
-    height: 130px;
+    width: 160px;
+    height: 160px;
     transform-style: preserve-3d;
     animation-name: animateSphere; 
     animation-duration: 30s;
@@ -175,8 +177,8 @@ p {
   .light {
      margin: auto;
      border-radius: 50%;
-     width: 130px;
-     height: 130px;
+     width: 160px;
+     height: 160px;
     box-shadow: 5px 5px 5px rgb(20, 20, 20);
   } 
   /* Clip the sphere a bit */
@@ -184,9 +186,6 @@ p {
     clip-path: circle(48%);
   }
 
-
-  
- 
   
   .arrow .arrow{
     position:absolute;
@@ -195,6 +194,7 @@ p {
     background:#64d3ff;
     margin-left: 30%;
     margin-right: 40%;
+    bottom: 25vh;
   }
   .arrow .arrow:after{
     display:block;
