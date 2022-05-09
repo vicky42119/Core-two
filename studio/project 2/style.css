@@ -13,7 +13,7 @@ html {
 .title-text {
 overflow-x: hidden;
 position: relative;
-margin-top: 30%;
+margin-top: 10vh;
 }
 
 svg {
@@ -124,7 +124,6 @@ p {
   
   .scene {
     perspective: 1000px;
-    margin-top: 4vh;
     position: relative;
     top: -26vh;
     right: 0.75vh;
