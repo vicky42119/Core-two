@@ -8,24 +8,22 @@ html {
   
 }
 
-@media (max-width: 480px) {
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+    
 body{
 background: rgb(124, 124, 124);
 overflow-x: hidden;
 overflow-y: hidden;
-
-
-
 }
 
 
 .title-text {
     position: fixed;
-    margin-right: 5%;
-    margin-left: 5%;
     margin-top: 15%;
-
-
+    width: 390px;
 }
 
 svg {
@@ -33,7 +31,7 @@ svg {
     height: auto;
     width: 60vmin;
     transform-origin: center;
-    width: 110%;
+    width: 100%;
     position: relative;
     font-family: 'Playfair Display', serif;
     font-weight: 800;
