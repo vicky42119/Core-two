@@ -8,6 +8,9 @@
 }
 
 html { overflow-x: hidden; overflow-y: hidden;
+  background: url(img/brick-wall.jpg);
+  background-size: 500px 844px;
+  background: cover;
 
 }  
 
@@ -21,14 +24,12 @@ html { overflow-x: hidden; overflow-y: hidden;
   border-color: white;
   border-width: 2vw;
   border-style: solid;
+  background-color: black;
 
 }
 
 body {
-    background-image: url(img/brick-wall.jpg);
-    background-size: 500px 844px;
-    -moz-background-clip: 50%;
-    margin: auto;
+    margin:auto;
     overflow-x: hidden;
 
   }
@@ -46,17 +47,20 @@ body {
 
   .wrapper {
     height: 100%;
-    width: 90%;
+    width: 87%;
     transform: perspective(450px) rotateX(30deg);
     overflow-y: scroll;
     overflow-x: hidden;
-    border-left: 4vw;
-    border-right: 4vw;
-    border-color: rgb(36, 36, 36);
+    border-left: 10vw;
+    border-right: 10vw;
+    border-color: rgb(143, 143, 143);
+    border-top-style: solid;
+    border-top-width: 2vw;
+    border-top-color: rgb(0, 0, 0);
     border-style: solid;
     box-shadow: 0px 10px 10px rgb(19, 19, 19);
     position: fixed;
-    top: 35vh;
+    top: 35.5vh;
     
 
   }
@@ -79,9 +83,8 @@ h2 {
     text-align: center;
     font-weight: 800;
     font-size: 6vw;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: white;
+    color: rgb(37, 37, 37);
+    background:rgb(143, 143, 143) ;
 
   }
   
@@ -94,23 +97,26 @@ p {
     margin-left: 10%;
     margin-right: 10%;
     background-size: 4vw;
+    color: white;
 
 }
 
 .semi-circle{
     position: fixed;
-    left: 50%;
+    left: 52vw;
     transform: translate(-50%, -50%);
     height: 50vw;
     width: 70vw;
     border-radius: 35vw 35vw 0 0;
     border-color: rgb(61, 61, 61);
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(0, 0, 0);
     border-width: 3vw;
     border-bottom: 0pt;
     border-style: dashed;
-    float: center;
-    z-index: 1;
-    position: relative; 
     }
 
+    .background{
+  background-color: black; 
+  z-index: 999;
+      }
+  
