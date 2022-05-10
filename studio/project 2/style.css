@@ -14,7 +14,7 @@ html {
     and (-webkit-device-pixel-ratio: 3) {
     
 body{
-background: rgb(124, 124, 124);
+background: rgb(0, 0, 0);
 overflow-x: hidden;
 overflow-y: hidden;
 }
@@ -67,11 +67,13 @@ text-shadow: 2px 2px #0099ff;
 
 a {
     text-decoration: none;
-    color: #1f1f1f; 
+    color: #ffffff; 
     font-weight: 800;
     font-size: 7vw;
     position: fixed;
-    bottom: 25vh;   
+    bottom: 25vh; 
+    margin-left: 35%;  
+    margin-right: 35%;  
 }
 
 
@@ -86,7 +88,7 @@ h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     font-size: 8vw;
-    color: rgb(58, 58, 58);
+    color: rgb(255, 255, 255);
     font-stretch: extra-expanded;
     
 
@@ -145,7 +147,7 @@ p {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    box-shadow: -40px 10px 70px 10px rgba(0,0,0,0.5) inset;
+    box-shadow: -40px 10px 70px 10px rgba(0, 40, 87, 0.5) inset;
     z-index: 2;
   }
   
@@ -159,7 +161,7 @@ p {
     left: 0;
     -webkit-filter: blur(0);
     opacity: 0.3;
-    background: radial-gradient(circle at 50% 80%, #81e8f6, #76deef 10%, #055194 66%, #062745 100%);
+    background: radial-gradient(circle at 50% 80%, #d7faff, #97e7f3 10%, #2e6492 66%, #1b3a57 100%);
   }
   
 
