@@ -43,7 +43,7 @@ svg {
   }
 
 .circle {
-    position: relative; 
+   
     display: block;
     background: black;
     border-radius: 50%;
