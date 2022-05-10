@@ -2,30 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap');
 
 html {
-    background:#252525;
+ 
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+body{
+background: rgb(124, 124, 124);
+overflow-x: hidden;
+overflow-y: hidden;
+
 }
 
 
 @media (max-width: 480px) {
 
 .title-text {
-overflow-x: hidden;
-position: relative;
-top: 10vh;
+    position: fixed;
+    margin-top: 20vh;
+    margin-left: 5vh;
 
 }
 
 svg {
     fill: currentColor;
     height: auto;
-    max-width: 66vmin;
+    width: 70vmin;
     transform-origin: center;
-    width: 66%;
+    width: 110%;
     position: relative;
-    margin-left: 15%;
-    margin-right: 15%;
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     color: rgb(219, 219, 219);
@@ -44,9 +49,10 @@ svg {
 }
 
  .author {
-    position: relative;
+    position: fixed;
     text-align: center;
     color: white;
+    bottom: 37vh;
 
 }
 
@@ -56,16 +62,9 @@ a {
     color: #1f1f1f; 
     font-weight: 800;
     font-size: 7vw;
-    margin-left: 30%;
-    margin-right: 40%;
-    position: relative;
-    left: 1vh;
-    bottom: -12.5vh;
-
-    
+    position: fixed;
+    bottom: 25vh;   
 }
-
-
 
 
 h1 {
@@ -112,83 +111,8 @@ p {
     font-size: 5vw;
 }
 
-{
-    margin: 0;
-    padding: 0;
-  }
-  /* Rotate Sphere animation */
-  @-webkit-keyframes animateSphere {
-    0% { transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg); }
-    50% { transform: rotateY(360deg) rotateX(360deg) rotateZ(0deg); }
-    100% { transform: rotateY(720deg) rotateX(720deg) rotateZ(360deg); }
-  }
-  
-  
-  .scene {
-    perspective: 1000px;
-    right: 0.75vh;
-    position: relative;
-    top: 35vh;
-
-  }
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    width: 160px;
-    height: 160px;
-    transform-style: preserve-3d;
-    animation-name: animateSphere; 
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  .border {
-    border: 5px solid black;
-  }
-  .circle {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: rgb(106, 200, 255);
-
-  }
-  /* X Axis */
-  .circle:nth-child(1) {transform: rotate3d(1, 0, 0, 0deg);}
-  .circle:nth-child(2) {transform: rotate3d(1, 0, 0, 36deg);}
-  .circle:nth-child(3) {transform: rotate3d(1, 0, 0, 72deg);}
-  .circle:nth-child(4) {transform: rotate3d(1, 0, 0, 108deg);}
-  .circle:nth-child(5) {transform: rotate3d(1, 0, 0, 144deg);}
-  /* Y Axis */
-  .circle:nth-child(6) {transform: rotate3d(0, 1, 0, 0deg);}
-  .circle:nth-child(7) {transform: rotate3d(0, 1, 0, 36deg);}
-  .circle:nth-child(8) {transform: rotate3d(0, 1, 0, 72deg);}
-  .circle:nth-child(9) {transform: rotate3d(0, 1, 0, 108deg);}
-  .circle:nth-child(10) {transform: rotate3d(0, 1,0, 144deg);}
-  /* Z Axis */
-  .circle:nth-child(11) {transform: rotate3d(0, 1, 0, 90deg) rotate3d(1, 0, 0, 0deg);}
-  .circle:nth-child(12) {transform: rotate3d(0, 1, 0, 90deg) rotate3d(1, 0, 0, 36deg);}
-  .circle:nth-child(13) {transform: rotate3d(0, 1, 0, 90deg) rotate3d(1, 0, 0, 72deg);}
-  .circle:nth-child(14) {transform: rotate3d(0, 1, 0, 90deg) rotate3d(1, 0, 0, 108deg);}
-  .circle:nth-child(15) {transform: rotate3d(0, 1, 0, 90deg) rotate3d(1, 0, 0, 144deg);}
-  
-  /* Light effect */
-  .light {
-     margin: auto;
-     border-radius: 50%;
-     width: 160px;
-     height: 160px;
-    box-shadow: 5px 5px 5px rgb(20, 20, 20);
-  } 
-  /* Clip the sphere a bit */
-  .clip {
-    clip-path: circle(48%);
-  }
-
-  
   .arrow .arrow{
-    position:absolute;
+    position: fixed;
     width:100px;
     height:30px;
     background:#64d3ff;
@@ -198,7 +122,6 @@ p {
   }
   .arrow .arrow:after{
     display:block;
-
     padding:0;
     content:'';
     width: 0; 
@@ -209,4 +132,104 @@ p {
       border-left: 30px solid #64d3ff;
   }
 
+  .ball {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    background: url('http://hop.ie/balls/images/world-map-one-color.png') repeat-x;
+    background-size: auto 100%;
+    -webkit-animation: move-map 30s infinite linear;
+    -moz-animation: move-map 30s infinite linear;
+    -o-animation: move-map 30s infinite linear;
+    -ms-animation: move-map 30s infinite linear;
+    animation: move-map 30s infinite linear;
+  }
+  
+  .ball:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: -40px 10px 70px 10px rgba(0,0,0,0.5) inset;
+    z-index: 2;
+  }
+  
+  .ball:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-filter: blur(0);
+    opacity: 0.3;
+    background: radial-gradient(circle at 50% 80%, #81e8f6, #76deef 10%, #055194 66%, #062745 100%);
+  }
+  
+
+  .stage {
+    position: relative;
+    top: -36.5vh;
+    left: 5vh;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    -ms-perspective: 1200px;
+    -o-perspective: 1200px;
+    perspective: 1200px;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    -ms-perspective-origin: 50% 50%;
+    -o-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+  }
+  
+  @-moz-keyframes move-map {
+    0% {
+      background-position: -849px 0; }
+  
+    100% {
+      background-position: 0 0; } }
+  
+  @-webkit-keyframes move-map {
+    0% {
+      background-position: 0 0; }
+    100% {
+      background-position: -849px 0; }
+  }
+  
+  
+  @-o-keyframes move-map {
+    0% {
+      background-position: -849px 0; }
+  
+    100% {
+      background-position: 0 0; } }
+  
+  @-ms-keyframes move-map {
+    0% {
+      background-position: -849px 0; }
+  
+    100% {
+      background-position: 0 0; } }
+  
+  @keyframes move-map {
+    0% {
+      background-position: -849px 0; }
+  
+    100% {
+      background-position: 0 0; } }
 }
+
+
+
