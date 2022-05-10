@@ -24,6 +24,8 @@ overflow-y: hidden;
     position: fixed;
     margin-top: 15%;
     width: 390px;
+    margin-bottom: 10vh;
+    height: 45vh;
 }
 
 svg {
@@ -51,7 +53,6 @@ svg {
 }
 
  .author {
-    position: fixed;
     text-align: center;
     color: white;
     bottom: 37vh;
