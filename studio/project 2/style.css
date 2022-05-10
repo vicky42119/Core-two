@@ -5,21 +5,19 @@ html {
  
     overflow-x: hidden;
     overflow-y: hidden;
-    max-width: 480px
   
 }
 
+@media (max-width: 480px) {
 body{
 background: rgb(124, 124, 124);
 overflow-x: hidden;
 overflow-y: hidden;
-max-width: 480px
+
 
 
 }
 
-
-@media (max-width: 480px) {
 
 .title-text {
     position: fixed;
@@ -33,7 +31,7 @@ max-width: 480px
 svg {
     fill: currentColor;
     height: auto;
-    width: 70vmin;
+    width: 60vmin;
     transform-origin: center;
     width: 110%;
     position: relative;
