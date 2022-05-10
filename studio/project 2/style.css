@@ -38,6 +38,7 @@ svg {
     font-family: 'Playfair Display', serif;
     font-weight: 800;
     color: rgb(219, 219, 219);
+    margin-top: 20%;
 
   }
 
@@ -119,31 +120,7 @@ p {
     font-size: 5vw;
 }
 
-.arrow { 
-    
 
-}
-
-  .arrow .arrow{
-    position: fixed;
-    width:100px;
-    height:30px;
-    background:#64d3ff;
-    margin-left: 30%;
-    margin-right: 40%;
-    bottom: 25vh;
-  }
-  .arrow .arrow:after{
-    display:block;
-    padding:0;
-    content:'';
-    width: 0; 
-      height: 0; 
-      border-top: 30px solid transparent;
-      border-bottom: 30px solid transparent;
-      margin:-.9em 6.15em;
-      border-left: 30px solid #64d3ff;
-  }
 
   .ball {
     display: inline-block;
