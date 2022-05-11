@@ -14,7 +14,7 @@ function setup() {
   createCanvas(1420, 900);
   noStroke();
   background(255);
-  rectWidth = 100;
+  rectWidth = 25;
   Height = 50;
 
 

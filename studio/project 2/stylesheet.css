@@ -20,7 +20,7 @@ html { overflow-x: hidden; overflow-y: hidden;
   border-radius: 50%;
   margin-left: 29%;
   margin-right: 29%;
-  margin-top: 20vw;
+  margin-top: 5vw;
   border-color: white;
   border-width: 2vw;
   border-style: solid;
@@ -40,14 +40,14 @@ body {
       margin-right: 30%;
       text-align: center;
       position: relative;
-      bottom: 18%;
+      bottom: 20%;
       
 
 }
 
   .wrapper {
     height: 100%;
-    width: 87%;
+    width: 79%;
     transform: perspective(450px) rotateX(30deg);
     overflow-y: scroll;
     overflow-x: hidden;
@@ -103,7 +103,8 @@ p {
 
 .semi-circle{
     position: fixed;
-    left: 52vw;
+    top: 42vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
     height: 50vw;
     width: 70vw;
