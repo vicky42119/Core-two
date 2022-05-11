@@ -14,7 +14,8 @@ html {
     and (-webkit-device-pixel-ratio: 3) {
     
 body{
-background: rgb(0, 0, 0);
+background-image: url(img/night-sky.png);
+background-size: 170%;
 overflow-x: hidden;
 overflow-y: hidden;
 }
@@ -53,9 +54,7 @@ svg {
       
 }
 
-text {
-text-shadow: 2px 2px #0099ff;
-}
+
 
  .author {
     text-align: center;
@@ -137,6 +136,7 @@ p {
     -o-animation: move-map 30s infinite linear;
     -ms-animation: move-map 30s infinite linear;
     animation: move-map 30s infinite linear;
+    background-color: cornflowerblue;
   }
   
   .ball:before {
@@ -147,7 +147,7 @@ p {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    box-shadow: -40px 10px 70px 10px rgba(0, 40, 87, 0.5) inset;
+    box-shadow: -40px 10px 70px 10px rgba(0, 18, 39, 0.5) inset;
     z-index: 2;
   }
   
@@ -161,7 +161,7 @@ p {
     left: 0;
     -webkit-filter: blur(0);
     opacity: 0.3;
-    background: radial-gradient(circle at 50% 80%, #d7faff, #97e7f3 10%, #2e6492 66%, #1b3a57 100%);
+    background: radial-gradient(circle at 50% 80%, #d7faff, #97e7f3 10%, #2e6492 66%, #05111d 100%);
   }
   
 
