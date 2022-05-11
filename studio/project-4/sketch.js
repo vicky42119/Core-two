@@ -11,11 +11,11 @@ let rectHeight;
 let userTypingBool = false;
 
 function setup() {
-  createCanvas(1420, 900);
+  createCanvas(1420, 1400);
   noStroke();
-  background(255);
+  background(0);
   rectWidth = 25;
-  Height = 50;
+  Height = 400;
 
 
 
