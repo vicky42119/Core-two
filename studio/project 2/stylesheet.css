@@ -48,7 +48,7 @@ body {
 
   .wrapper {
     height: 100%;
-    width: 79%;
+    width: 73%;
     transform: perspective(450px) rotateX(30deg);
     overflow-y: scroll;
     overflow-x: hidden;
