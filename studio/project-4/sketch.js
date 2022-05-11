@@ -8,6 +8,7 @@
  */
 let rectWidth;
 let rectHeight;
+
 let userTypingBool = false;
 
 function setup() {
@@ -90,10 +91,10 @@ function randomShape() {
     fill(randFill_r, randFill_g, randFill_b);
     let x = map(keyIndex, 0, 25, 0, width - rectWidth);
     randomRange(0,1);
-    if (randomRange(0) == 0) {
-      ellipse(x, 0, rectWidth, height);
-    }if (randomRange(0,1) == 1){
+    if (randomRange(0,1) == 0) {
       rect(x, 0, rectWidth, height);
+    }if (randomRange(0,1) == 1){
+      square(x, 0, rectWidth, height);
     }
 }
 

@@ -19,22 +19,23 @@ canvas {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-  margin-right: 33vh;
+  font-size: 4em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2vh;
+
 }
 
 .title {
   position: fixed;
-  top: -2vh;
   display: flex;
-  flex-direction: row;
-  min-width: 100%;
-  justify-content: right;
+  min-width: 100vw;
   border-bottom-style: solid;
   border-bottom-width: 1pt;
   z-index: 999;
-  background-color: white;
-  width: 3vh;
+  background-color: rgb(0, 0, 0);
+  color: white;
+
 
 
 }
