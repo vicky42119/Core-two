@@ -12,7 +12,7 @@ let rectHeight;
 let userTypingBool = false;
 
 function setup() {
-  createCanvas(1420, 1400);
+  createCanvas(1420, 1410);
   noStroke();
   background(0);
   rectWidth = 25;
