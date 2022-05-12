@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-
-
 html {
     height: 100vh;
     background-color: rgb(223, 223, 223);
@@ -36,9 +34,6 @@ position: relative;
     top: 1px;
 
 }
-
-
-
 
 
 h4 {
@@ -188,11 +183,6 @@ h6 {
 }
 
 .project-title{
-       
-    position: relative;
-    top: -3em;
-    max-width: 22em; 
-
     }
 
 .project-box {
@@ -387,48 +377,16 @@ h3 {
 }
 
 .project-title {
-    position: relative;
-    top: -4vh;
-    line-height: 0em;
 
 }
 
-.project-title2 {
-    position: relative;
-    top: -4vh;
-
-}
 
 .project-box {
     position: relative;
-    top: -10em ;
     gap: 20px;
 }
 
-.project-box2 {
-    position: relative;
-    top: -10em ;
-    gap: 20px;
-}
 
-.Project-images{
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-      
-}
-
-
-img {
-    object-fit: contain;
-    max-width:15em;
-    max-height: 100%;
-    margin: 3pt;
-    transition: .2s ease;
-
-
- 
-}
 
 img:hover {
     transform: scale(1.2);
